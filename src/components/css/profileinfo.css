@@ -1,0 +1,84 @@
+body.light {
+    --button-border-color: #000000;
+  }
+  
+  body.dark {
+    --button-border-color: #ffffff;
+  }
+
+
+.label_container{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.name_button {
+    transition: all .3s;
+    position: relative; /* Ensure the container is positioned */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.label_10, .label_11 {
+    font-size: 24px;
+    border-bottom: 1px solid var(--border-color);
+    position: absolute; /* Position the element */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.label_10 {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .3s, visibility .3s;
+    z-index: 1;
+}
+
+.label_11 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+    z-index: -1;
+}
+
+.name_button:hover .label_10 {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.name_button:hover .label_11 {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+
+
+
+
+.label_2{
+    font-size:  32px;
+}
+
+
+.label_3{
+    font-size:  24px;
+}
+
+.label_4{
+    font-size:  32px;
+}
+
+
+.link_label{
+    color: inherit; /* Inherits the color from the parent element */
+    text-decoration: underline; /* Adds underline on hover for better UX */
+    transition: all .3s;
+}
+
+.link_label:hover {
+    font-size:  35px;
+}

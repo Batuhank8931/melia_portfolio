@@ -1,0 +1,16 @@
+.picture_circle {
+    position: relative; /* Set position to relative */
+    z-index: 2; /* Higher z-index to ensure it’s in front */
+    overflow: hidden;
+  }
+  
+
+  .circles {
+    position: relative; /* Set position to relative */
+    z-index: 1; /* Lower z-index to ensure it’s behind */
+    transform: translate(-0%, -100%);
+    overflow: hidden;
+  }
+  
+  
+  

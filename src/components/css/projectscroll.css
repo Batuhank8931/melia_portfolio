@@ -1,0 +1,69 @@
+.project-scroll {
+    display: flex;
+    position: relative;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    transform: translate(8%, -0%);
+
+  }
+  
+
+  .project-scroll > div {
+    width: 800px; /* Adjust as necessary */
+    height: 700px; /* Adjust as necessary */
+    margin-left: -300px; /* Negative margin to create overlap */
+    transition: all 0.3s;
+    border: 8px solid #b1c6df;
+    border-radius: 8%;
+    backdrop-filter: blur(5px); /* Blur effect */
+    position: relative; /* Ensure z-index works */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* To ensure pseudo-element stays within bounds */
+    background: transparent; /* Ensure no background color */
+}
+
+.project-scroll > div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(179.96deg, rgba(128, 128, 128, 0.8) 0%, rgba(169, 169, 169, 0.153) 100%);
+    transition: opacity 0.3s;
+    opacity: 0; /* Start with the gradient hidden */
+    z-index: -1; /* Ensure it stays behind content */
+}
+
+.project-scroll > div:hover::before {
+    opacity: 1; /* Show the gradient on hover */
+}
+
+
+
+
+  .imac{
+    width: 550px;
+    color: white;
+  }
+  
+
+  .title_box{
+    width: 100%;
+    padding-left: 140px;
+  }
+
+.title_1{
+  font-size: 32px;
+  font-family:"Montserrat-Bold";
+}
+
+
+.title_2{
+  font-size: 32px;
+}
